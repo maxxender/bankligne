@@ -1,0 +1,128 @@
+header{
+    background-color: rgb(30, 159, 201);
+    height: 150px;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 99%;
+}
+.logo{
+    height: 30px;
+    width: 400px;
+    margin: 60px 50px 30px 0;
+}
+
+.green-yellow{
+    color: rgb(164, 198, 57);
+}
+nav{
+    background-color: rgb(68, 68, 68);
+    color: #fff;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    
+}
+nav a{
+    text-align: center;
+    margin: 0 14px;
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+}
+footer{
+    margin: 50px 0 0 0;
+    border-top: 1px solid rgb(221, 221, 221);
+    background-color:rgb(244, 246, 243) ;
+    color: rgb(191, 175, 189);
+    text-align: right;
+    font-size: 0.8;
+    padding: 10px 0;
+}
+.first-section{
+    margin: 70px 0;
+    text-align: center;
+}
+.first-section p{
+    font-size: 1.2em;
+    color: rgb(191, 175, 189);
+    padding: 10px 300px;
+}
+.first-section h3{
+    font-size: 1.8em;
+}
+.two-section{
+    display: flex;
+}
+
+.two-section__left{
+    width: 48%;
+    display: flex;
+}
+
+.two-section__left input, .two-section__left select{
+    height: 30px;
+    border: 1px solid rgb(221, 221, 221);
+    margin: 5px 5px;
+    width: 150px;
+}
+.two-section__left__note{
+    background-color: rgb(191, 175, 189);
+    color: #fff;
+    padding: 25px 10px;
+    margin-bottom: 40px;
+}
+.two-section__right{
+    width: 50%;
+    padding: 5px 15px;
+}
+.page-signup.container{
+    margin: 0 70px;
+}
+.two-section__part__title-two{
+    font-size: 1.5em;
+}
+.two-section__part__text{
+    color: rgb(191, 175, 189);
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+.two-section__two-section{
+    display: flex;
+}
+.two-section img{
+    width: 88%;
+    margin: 6%;
+}
+
+.two-section__button{
+    background-color: rgb(164, 198, 57);
+    color: #fff;
+    padding: 15px 15px;
+    margin: 40px 0;
+    border: none;
+    font-family: sans-serif;
+    position: relative;
+    left: 320px;
+    width: 180px;
+}
+.infos-page{
+    border-bottom: 1px solid rgb(221, 221, 221);
+    margin: 22px 0 0 0;
+    background-color: rgb(244, 246, 243);
+    color: rgb(191, 175, 189);
+    font-size: 0.8em;
+    
+}
+.infos-page span{
+    margin-left: 10px;
+}
+.infos-page i{
+    background-color: rgb(221, 221, 221);
+    padding: 11px;
+}

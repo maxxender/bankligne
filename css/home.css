@@ -1,0 +1,347 @@
+header{
+    background-color: rgb(30, 159, 201);
+    height: 500px;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 99%;
+}
+.logo{
+    height: 30px;
+    width: 400px;
+}
+.header-head{
+    margin: 0 0 40px 0;
+    display: flex;
+}
+.header-head-part{
+    width: 600px;
+    margin: 40px 40px;
+}
+.head-login{
+    background-color: rgb(68, 68, 68);
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    font-size: 0.8em;
+}
+.head-login div{
+    display: inline-block;
+    height: 100%;
+    justify-content: center;
+}
+.form-login{
+    margin: 25px 85px 0 0;
+    width: 900px;
+    background-color: rgba(19, 99, 124, 0.6);
+}
+.head-login .form-part-login{
+    width: 100%;
+}
+.form-part-fields .fields-password{
+    border-left: 1px solid rgb(149, 148, 148);
+}
+
+.form-login .form-part{
+    margin: 25px 0;
+}
+.form-part-fields{
+    padding: 15px 20px;
+    display: flex;
+}
+.fields{
+    padding-left: 8px;
+}
+.form-login input, .form-login button{
+    height: 35px;
+    margin: 0;
+    border: none;
+}
+.form-login button{
+    height: 38px;
+    position: relative;
+    left: 30px;
+    width: 50px;
+}
+
+.green-yellow{
+    background-color: rgb(164, 198, 57);
+    color: #fff;
+}
+nav{
+    background-color: rgb(68, 68, 68);
+    color: #fff;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+nav a{
+    text-align: center;
+    margin: 0 14px;
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+}
+.form-part{
+    display: flex;
+    border: none;
+}
+.container{
+    
+    background-color: #fff;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.container-bloc
+{
+    margin: 0 auto;
+    width: 90%;
+    
+}
+.container img
+{
+    max-width: 900px;
+}
+.carousel{
+    width: 780px;
+}
+.carousel img{
+    height: 330px;
+    width: 100%;
+}
+.infos-right{
+    background-color: rgb(68, 68, 68);
+    width: 300px;
+    position: relative;
+    margin: 0 30px;
+    color: #fff;
+}
+.first-bloc{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.infos-page{
+    display: flex;
+    align-items: center;
+    background-color: rgb(248,248,248);
+    color: rgb(168, 163, 158);
+    margin: 15px 0;
+    font-size: 0.7em;
+}
+.infos-page span{
+    margin-left: 20px;
+}
+
+.infos-page img{
+    width: 20px;
+}
+
+.infos-page div{
+    padding: 7px;
+    background-color: rgb(226, 226, 226);
+}
+
+.access-online
+{
+    width: auto;
+    position: relative;
+    left: 160px;
+    padding: 7px 0;
+}
+.register-here{
+    height: 100px;
+    padding: 0;
+    color: red;
+    margin: 0;
+    background-color: aqua;
+}
+
+.icon-infos
+{
+    fill: red;
+}
+svg{
+    fill: orange;
+    color: aqua;
+}
+.infos-right-content-bloc-with-icon{
+    
+    display: flex;
+    align-items: center;
+    
+}
+.infos-right-content-bloc-without-icon{
+    border: 1px solid green;
+    text-align: left;
+    padding: 2px;
+}
+.infos-right img{
+    width: 40px;
+    height: 30px;
+}
+.second-bloc{
+    background-color: #fff;
+    margin-bottom: 90px;
+}
+.second-bloc__body{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.second-bloc__head-title{
+    font-size: 1.80em;
+}
+.second-bloc__head-title span{
+    color: rgb(164, 198, 57);
+}
+.second-bloc__head-para{
+    padding: 0 200px;
+    font-size: 1.3em;
+    color: rgb(168, 163, 158);
+}
+.second-bloc__body-part img{
+    width: 200px;
+    height: 100px;
+}
+
+.second-bloc__body-part{
+    display: flex;
+    width: 400px;
+    padding: 35px;
+    margin: 0 15px;
+    border: 1px solid rgb(240,240,240);
+}
+
+.second-bloc__body-part a{
+    text-decoration: none;
+    color: rgb(164, 198, 57);
+}
+.second-bloc__body-part p{
+    font-size: 0.8em;
+    color: rgb(149, 148, 148);
+    text-align: left;
+}
+.second-bloc__body-part__content{
+    text-align: left;
+    padding: 0 40px;
+}
+.three-bloc__part h3, .three-bloc__part h4{
+
+    margin: 0;
+}
+.three-bloc{
+    background-color: rgb(68, 68, 68);
+    display: flex;
+    padding: 20px 4px;
+    margin-bottom: 50px;
+}
+.three-bloc__part h4{
+    color: rgb(164, 198, 57);
+    font-size: 1.8em;
+}
+.three-bloc__part .top, .three-bloc__part .bottom{
+    display: flex;
+}
+.left.three-bloc__part{
+    width: 400px;
+    display: inline-block;
+    color: rgb(164, 198, 57);
+    font-size: 2.5em;
+    text-align: left;
+    padding-top: 60px;
+    position: relative;
+    left: 30px;
+}
+.left.three-bloc__part button{
+    background-color: rgb(168, 163, 158);
+    border: 1px solid #fff;
+    padding: 9px 4px;
+    color: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.right.three-bloc__part{
+    width: 700px;
+    text-align: left;
+}
+
+.three-bloc__part-top, .three-bloc__part-bottom{
+    border: 2px solid #fff;
+    margin: 12px;
+    color: #fff;
+    padding: 20px;
+}
+
+.four-bloc{
+    display: flex;
+}
+.four-bloc__part{
+    width: 405px;
+    text-align: left;
+    padding: 0;
+}
+
+.four-bloc__part ul{
+    padding: 0;
+}
+.four-bloc__part li{
+    font-size: 0.9em;
+    margin: 12px 0;
+}
+
+.four-bloc form{
+    display: flex;
+}
+.four-bloc li a, .four-bloc span{
+    font-size: 0.5em;
+    color: rgb(191, 175, 189);
+    position: relative;
+    top: 5px;
+    font-family: Arial;
+    margin: 0 5px;
+}
+.four-bloc form input, .four-bloc i, .four-bloc button{
+    height: 30px;
+    display: flex;
+    font-size: 1.4em;
+    border: none;
+}
+.four-bloc button{
+    background-color: rgb(164, 198, 57);
+    color: #fff;
+    border: none;
+    font-size: 0.8em;
+    padding: 5px;
+    height: 36px;
+}
+
+footer{
+    margin: 50px 0;
+    height: 50px;
+    border-top: 1px solid rgb(221, 221, 221);
+    background-color:rgb(244, 246, 243) ;
+    color: rgb(191, 175, 189);
+    text-align: right;
+    font-size: 0.8;
+    padding: 10px 0;
+}
+li{
+    list-style-type: none;
+}
+.fa-check, .fa{
+    color: rgb(164, 198, 57);
+}

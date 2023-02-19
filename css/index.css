@@ -1,0 +1,34 @@
+
+body{
+    background-color: #1FA2CB;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+footer{
+    background-color: aliceblue;
+    min-height: 200px;
+}
+#form-enter-site{
+    background-color: #fff;
+    height: 440px;
+    margin: 0 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#form-enter-site input,#form-enter-site button, #form-enter-site label{
+    width: 500px;
+    height: 40px;
+    margin: 10px 100px 10px 100px;
+    display: block;
+}
+#form-enter-site button{
+    background-color: rgb(42, 100, 150);
+    color: aliceblue;
+    font-family: Arial;
+    border: none;
+}
+#form-enter-site input{
+    border: 1px solid rgb(224, 220, 220);
+}

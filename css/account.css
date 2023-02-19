@@ -1,0 +1,253 @@
+header{
+    background-color: rgb(30, 159, 201);
+    height: 150px;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 99%;
+}
+.logo{
+    height: 30px;
+    width: 400px;
+    margin: 60px 50px 30px 0;
+}
+
+.green-yellow{
+    color: rgb(164, 198, 57);
+}
+nav{
+    background-color: rgb(68, 68, 68);
+    color: #fff;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-left: 80px;
+    height: 170px;
+    margin-bottom: 15px;
+}
+nav a{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-left: 23px;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+    display: inline-block;
+}
+footer{
+    margin: 50px 0 0 0;
+    border-top: 1px solid rgb(221, 221, 221);
+    background-color:rgb(244, 246, 243) ;
+    color: rgb(191, 175, 189);
+    text-align: right;
+    font-size: 0.8;
+    padding: 10px 0;
+}
+.infos-page{
+    border-bottom: 1px solid rgb(221, 221, 221);
+    margin: 0;
+    background-color: rgb(244, 246, 243);
+    color: rgb(191, 175, 189);
+    font-size: 0.8em;
+    
+}
+.infos-page span{
+    margin-left: 10px;
+}
+.infos-page i{
+    background-color: rgb(221, 221, 221);
+    padding: 11px;
+}
+.page-login.page-name{
+    background-color: rgb(38, 38, 38);
+    color: #fff;
+    font-size: 2.5em;
+    height: 80px;
+    padding-top: 40px;
+    margin-top: 10px;
+    padding-left: 100px;
+}
+
+
+.btn-login{
+    background-color: rgb(164, 198, 57);
+    color: #fff;
+    border: none;
+    position: relative;
+    left: 115px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.left-container{
+    border:1px solid rgb(221, 221, 221);
+    width: 30%;
+    padding: 0;
+}
+.right-container{
+    margin-left: 50px;
+    width: 60%;
+}
+
+.page-account-container{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    margin-top: 50px;
+}
+.four-bloc{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    color: rgb(191, 175, 189);
+    margin-top: 60px;
+}
+.four-bloc__part{
+    margin: 0 auto;
+    width: 385px;
+    text-align: left;
+    padding: 0;
+    border: 0px solid yellow;
+}
+
+.enveloppe-container{
+    background-color: rgb(191, 175, 189);
+    padding: 15px;
+    height: 12px;
+}
+.enveloppe-container i{
+    color: #000;
+}
+.form-question span{
+    border: 1px solid blue;
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+}
+
+.four-bloc__part ul{
+    padding: 0;
+}
+.four-bloc__part li{
+    font-family: 'Courier New';
+    font-size: 0.9em;
+    margin: 12px 0;
+    list-style-type: none;
+    display: flex;
+}
+.form-question{
+    display: table;
+    border-collapse: separate;
+    border: 0px solid blue;
+}
+.four-bloc .form-part{
+    display: flex;
+}
+
+.four-bloc li a, .four-bloc span{
+    font-size: 0.5em;
+    color: rgb(191, 175, 189);
+    position: relative;
+    font-family: Arial;
+    
+}
+.four-bloc__part ul li i{
+    position: relative;
+    bottom: 9px;
+    color: rgb(164, 198, 57);
+    font-size: 1.5em;
+}
+.four-bloc form input{
+    height: 38px;
+    display: flex;
+    font-size: 1.4em;
+    border: none;
+    color: rgb(164, 198, 57);
+    position: relative;
+}
+.four-bloc__part form input{
+    border: 1px solid rgb(221, 221, 221);
+    width: 200px;
+}
+.four-bloc button{
+    background-color: rgb(164, 198, 57);
+    color: #fff;
+    border: none;
+    font-size: 0.8em;
+    padding: 15px;
+    height: 42px;
+}
+.notice{
+    
+    background-color: rgb(249, 240, 196);
+    padding: 13px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.notice h3{
+    color: rgb(164, 198, 57);
+    font-size: 1.4em;
+}
+.releve-prev{
+    border-top: 1px solid rgb(191, 175, 189);
+    border-bottom: 1px solid rgb(191, 175, 189);
+    padding: 10px 0;
+    color: rgb(191, 175, 189);
+}
+.releve-prev span{
+    display: inline-block;
+    width: 150px;
+}
+.releve h3{
+    font-size: 1.6em;
+    color: rgb(50, 55, 68);
+}
+.conseils p{
+    color: red;
+    font-size: 0.9em;
+}
+.conseils{
+    background-color: rgb(240, 237, 237);
+    padding: 10px;
+    margin-top: 250px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.bloc-1__content{
+    background-color: rgb(250, 250, 250);
+}
+.green-top{
+    background-color: rgb(164, 198, 57);
+    height: 10px;
+    margin: 0;
+}
+.bloc-1{
+    border: 1px solid green;
+    padding: 0;
+    margin: 0;
+}
+.bloc{
+    border: 1px solid rgb(221, 221, 221);
+}
+.bloc a{
+    color: rgb(164, 198, 57);
+    text-decoration: none;
+}
+.bloc div, .bloc h5{
+    border-top: 1px solid rgb(221, 221, 221);
+    padding: 10px;
+}
