@@ -6,6 +6,7 @@ header{
 body{
     margin: 0;
     padding: 0;
+    font-family: "Open Sans",sans-serif;
 }
 img{
     max-width: 99%;
@@ -64,7 +65,7 @@ img{
 .form-login button{
     height: 38px;
     position: relative;
-    left: 30px;
+    left: 10px;
     width: 50px;
 }
 
@@ -158,11 +159,11 @@ nav a{
     padding: 7px 0;
 }
 .register-here{
-    height: 100px;
-    padding: 0;
-    color: red;
-    margin: 0;
-    background-color: aqua;
+   background-color: rgb(164, 198, 57);
+   color: #fff;
+   position: relative;
+   bottom: 7px;
+
 }
 
 .icon-infos
@@ -174,20 +175,63 @@ svg{
     color: aqua;
 }
 .infos-right-content-bloc-with-icon{
-    
+    margin: 15px 10px;
     display: flex;
     align-items: center;
-    
+    color: rgb(164, 198, 57);    
 }
+.infos-right-content-bloc-with-icon span{
+    position: relative;
+    left: 10px;
+    color: #fff;
+}
+
+.infos-right-content-bloc-with-icon p{
+    display: block;
+    position: relative;
+    top: 30px;
+    right: 55px;
+    font-size: 0.8em;
+}
+
 .infos-right-content-bloc-without-icon{
-    border: 1px solid green;
+    border: 0px solid green;
     text-align: left;
     padding: 2px;
+    padding-left: 10px;
+}
+.infos-right li{
+    color: rgb(164, 198, 57);
+    position: relative;
+    right: 20px;
+    bottom: 5px;
+    width: auto;
+    text-align: left;
+}
+.infos-right a{
+    text-decoration: none;
+    color: rgb(149, 148, 148);
+}
+.infos-right a{
+    color: rgb(164, 198, 57);
+    font-size: 0.8em;
+}
+.infos-right-content-bloc-without-icon div{
+    font-size: 0.8em;
+    margin: 3px 0;
+    color: rgb(168, 163, 158);
 }
 .infos-right img{
     width: 40px;
     height: 30px;
 }
+.infos-right__title{
+    background-color: rgb(164, 198, 57);
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+}
+
 .second-bloc{
     background-color: #fff;
     margin-bottom: 90px;
