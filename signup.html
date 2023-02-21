@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/signup.css">
     <title>SIGNUP</title>
 </head>
@@ -26,8 +29,8 @@
             <a href="">Invesmets</a>
             <a href="">Insurance</a>
             <a href="">Loan</a>
-            <a href="">Account Login</a>
-            <a href="">Create Account</a>
+            <a href="login.html">Account Login</a>
+            <a href="signup.html">Create Account</a>
             <a href="">Financial services</a>
             <a href="">Contact Us</a>
         </nav>
@@ -37,75 +40,75 @@
     </div>
     <div class="page-signup container">
         <div class="page-sign-up__section first-section">
-            <h3><span class="green-yellow">Register</span> Area</h3>
+            <h3><span class="green-yellow">Zone</span> d'inscription</h3>
             <p>
-                Create new New York Offshore Bank & Trust online banking account, we will be happy to help if need be.
+                Créez un nouveau compte bancaire en ligne New York Offshore Bank & Trust, nous serons heureux de vous aider si nécessaire.
             </p>
         </div>
         <div class="page-sign-up__section two-section">
             <div class="two-section__left two-section__part">
-                <form action="" method="post">
+                <form action="php/create-account.php" method="post" id="form-submit-account">
                     <div class="two-section__left__note">Note: Leave Middle Name and Home Phone blank if you do not have them.</div>
                     <div>
                         <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Middle Name">
+                        <input type="text" placeholder="Middle Name" id="first-name" name="first-name">
                     </div>
                     <div>
                         <input type="text" placeholder="Last Name">
-                        <input type="text" placeholder="Choose Gender">
+                        <input type="text" placeholder="Choose Gender" id="gender" name="gender" >
                     </div>
                     <div>
-                        <input type="text" placeholder="Email Adress">
+                        <input type="text" placeholder="Email Adress" name="email" id="email">
                     </div>
                     <div>
-                        <input type="text" placeholder="Email Password">
+                        <input type="text" placeholder="Email Password" id="Password" class="password" >
                     </div>
                     <div>
-                        <input type="text" placeholder="Adresse">
-                        <input type="text" placeholder="city">
+                        <input type="text" placeholder="Adresse" id="adresse" name="adresse" >
+                        <input type="text" placeholder="city" id="city" name="city">
                     </div>
                     <div>
-                        <input type="text" placeholder="state">
-                        <input type="text" placeholder="ZipCode">
+                        <input type="text" placeholder="state" id="state" name="state">
+                        <input type="text" placeholder="ZipCode" name="zipcode" id="zipcode">
                     </div>
                     <div>
-                        <select name="" id="">
+                        <select name="pays" id="pays" >
                             <option value="">Select country</option>
                         </select>
                     </div>
                     <div>
-                        <input type="text" placeholder="Home phone">
-                        <input type="text" name="" id="" placeholder="Mobile Phone">
+                        <input type="text" placeholder="Home phone" id="phone" name="phone">
+                        <input type="text" name="mobile-phone" id="mobile-phone" placeholder="Mobile Phone">
                     </div>
                     <div>
-                        <input type="text" placeholder="SSN">
-                        <input type="text" placeholder="Ocupation">
+                        <input type="text" placeholder="SSN" id="ssn" name="ssn">
+                        <input type="text" placeholder="Ocupation" id="occupation" name="occupation">
                     </div>
                     <div>
                         <label for="Date of birth"></label>
                         <div>
-                            <input type="text" placeholder="Date">
-                            <input type="text" placeholder="Month">
-                            <input type="text" name="" id="" placeholder="Year">
+                            <input type="text" placeholder="Date" name="date-birth" id="date-birth">
+                            <input type="text" placeholder="Month" id="month-birth" name="month-birth">
+                            <input type="text" name="year-birth" id="year-birth" placeholder="Year">
                         </div>
                     </div>
                     <div>    
-                        <button class="two-section__button">CREEZ UN COMPTE</button>
+                        <button class="two-section__button" id="submit-account">CREEZ UN COMPTE</button>
                     </div>
                 </form>
             </div>
             <div class="two-section__right two-section__part" >
                 <div class="green-yellow">security tips</div>
-                <div class="two-section__part__title-two">secure your account</div>
+                <div class="two-section__part__title-two">Sécurise ton compte </div>
                 <div class="two-section__part__text">
-                    Remember to avoid doing any online banking on a public or shared WiFi connection,
-                     since that's when your information can be most easily intercepted.
+                    N'oubliez pas d'éviter d'effectuer des opérations bancaires en ligne sur une connexion Wi-Fi publique ou partagée, 
+                    car c'est à ce moment-là que vos informations peuvent être interceptées le plus facilement.
                 </div>
                 <div class="two-section__two-section">
                     <div>
-                        <h4>Anywhere acess</h4>
-                        <div class="two-section__part__text">With our online banking account you can pay a bill while on vacation in the Bahama
-                            s, or in your home or office anywhere in the world via the internet.
+                        <h4>Accès partout</h4>
+                        <div class="two-section__part__text">Avec notre compte bancaire en ligne, vous pouvez payer une
+                             facture pendant vos vacances aux Bahamas, ou chez vous ou au bureau partout dans le monde via Internet.
                         </div>
                     </div>
                     <div>
@@ -123,5 +126,56 @@
     <footer>
         © 2023 New York Offshore Bank & Trust. All Rights Reserved.
     </footer>
+
+    <script>
+        (function(){
+            var xhr = new XMLHttpRequest();
+
+            xhr.onreadystatechange = function(e){
+                    if(xhr.readyState === xhr.DONE){
+                        if(xhr.status === 200){
+                            var allPays = JSON.parse(xhr.responseText)
+                            var options = '';
+                        
+                            for(const id in allPays){
+                                options += '<option value=' + allPays[id] + ' >' + allPays[id] +  '</option>';
+                            }
+                            document.querySelector('#pays').innerHTML = options;
+
+
+                        }
+                    }
+            }       
+        xhr.open('GET', 'datas/countries-FR.json',true);
+        //xhr.responseType = 'json';
+        xhr.send();
+        })();
+
+        (function(e){
+            var btnSubmitAccount = document.querySelector('#submit-account');
+
+            btnSubmitAccount.addEventListener('click',function(e){
+                e.preventDefault();
+                var formAccount = document.querySelector('#form-submit-account');
+                var formdata = new FormData(formAccount);
+                var xhr = new XMLHttpRequest();
+
+                xhr.onreadystatechange = function(){
+                    if(xhr.readyState === xhr.DONE){
+                        if(xhr.status === 200){
+                            //window.location = 'account.html'
+                            console.log(JSON.parse(xhr.responseText))
+                        }else{
+                            console.log(JSON.parse(xhr.responseText))
+                        }
+                    }
+                }
+                xhr.open('POST','php/create-account.php',true);
+                xhr.setRequestHeader('X-Requested-With','xmlhttprequest');
+                xhr.send(formAccount);
+
+            })
+        })();
+    </script>
 </body>
 </html>
