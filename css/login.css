@@ -3,6 +3,9 @@ header{
     height: 150px;
     margin: 0;
 }
+button{
+    cursor: pointer;
+}
 body{
     margin: 0;
     padding: 0;

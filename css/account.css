@@ -114,6 +114,11 @@ footer{
     margin-top: 50px;
 }
 
+.account_prenom, .account_nom{
+    font-size: 1.6em;
+    font-style: italic;
+    font-weight: bold;
+}
 
 .enveloppe-container{
     background-color: rgb(191, 175, 189);
@@ -161,6 +166,7 @@ footer{
     border-collapse: separate;
     border: 0px solid blue;
 }
+
 .four-bloc .form-part{
     display: flex;
 }
@@ -311,12 +317,16 @@ button{
     height: 30px;
 }
 .form-modify-pass input{
-    border: 1px solid rgb(221, 221, 221);
+    border: 1px s
+    olid rgb(221, 221, 221);
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
+}
+button{
+    cursor: pointer;
 }
 .form-modify-pass button{
     background-color: rgb(164, 198, 57);

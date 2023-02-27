@@ -329,48 +329,93 @@ svg{
     color: #fff;
     padding: 20px;
 }
+.enveloppe-container{
+    background-color: rgb(191, 175, 189);
+    padding: 15px;
+    height: 12px;
+}
+.enveloppe-container i{
+    color: #000;
+}
+.form-question span{
+    border: 1px solid blue;
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+}
 
 .four-bloc{
     display: flex;
+    width: 90%;
+    margin: auto;
+    color: rgb(191, 175, 189);
+    margin-top: 60px;
+    border-top: 1px solid rgb(221, 221, 221);
+    padding-top: 40px;
 }
 .four-bloc__part{
-    width: 405px;
+    margin: 0 auto;
+    width: 385px;
     text-align: left;
     padding: 0;
+    border: 0px solid yellow;
 }
-
 .four-bloc__part ul{
     padding: 0;
 }
 .four-bloc__part li{
     font-size: 0.9em;
     margin: 12px 0;
-}
-
-.four-bloc form{
+    list-style-type: none;
     display: flex;
 }
+.form-question{
+    display: table;
+    border-collapse: separate;
+    border: 0px solid blue;
+}
+
+.four-bloc .form-part{
+    display: flex;
+}
+
 .four-bloc li a, .four-bloc span{
-    font-size: 0.5em;
+    position: relative;
+    left: 13px;
+    bottom: 11px;
+    font-size: 0.9em;
     color: rgb(191, 175, 189);
     position: relative;
-    top: 5px;
-    font-family: Arial;
-    margin: 0 5px;
+    font-family: 'Open Sans',sans-serif;
 }
-.four-bloc form input, .four-bloc i, .four-bloc button{
-    height: 30px;
+.four-bloc__part ul li i{
+    position: relative;
+    bottom: 9px;
+    color: rgb(164, 198, 57);
+    font-size: 1.5em;
+}
+.four-bloc form input{
+    height: 38px;
     display: flex;
     font-size: 1.4em;
     border: none;
+    color: rgb(164, 198, 57);
+    position: relative;
+}
+.four-bloc__part form input{
+    border: 1px solid rgb(221, 221, 221);
+    width: 200px;
+    font-size: 0.8em;
+    padding-left: 15px;
 }
 .four-bloc button{
     background-color: rgb(164, 198, 57);
     color: #fff;
     border: none;
     font-size: 0.8em;
-    padding: 5px;
-    height: 36px;
+    padding: 15px;
+    height: 42px;
+    cursor: pointer;
 }
 
 footer{
