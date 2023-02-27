@@ -29,8 +29,8 @@
             <a href="">Invesmets</a>
             <a href="">Insurance</a>
             <a href="">Loan</a>
-            <a href="login.html">Account Login</a>
-            <a href="signup.html">Create Account</a>
+            <a href="login.html" class="nav-link__login">Account Login</a>
+            <a href="signup.html" class="nav-link__signup">Create Account</a>
             <a href="">Financial services</a>
             <a href="">Contact Us</a>
         </nav>
@@ -47,7 +47,7 @@
             <div class="bloc-1__content">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <h3>GOOD DAY</h3>
-                <div class="nom-prenom">axel rood </div>
+                <div class="nom-prenom"> <span class="account_prenom"></span> <span class="account_nom"></span> </div>
                 <div class="text">
                     Besoin d'aide pour gérer et accéder aux fonctions de votre compte ? Contactez le service d'assistance
                      et laissez-les résoudre votre problème.
@@ -71,7 +71,7 @@
        </div>
        <div class="right-container">
          <div>Fonds de transfert</div>
-         <form action="" method="post" class="form-transfert">
+         <form action="" method="post" class="form-transfert" id="form-transfert">
             <div>
                 <label for="">Montant(USD)</label>
                 <input type="text" name="" id="">
@@ -149,5 +149,40 @@
     <footer>
         © 2023 New York Offshore Bank & Trust. All Rights Reserved.
     </footer>
+
+    <script src="js/prev_nav_connect_id.js"></script>
+    <script>
+        (function(){
+            var id_account =sessionStorage.getItem('id')
+            if(id_account == '' || id_account === null){
+                window.location.replace('./home.html')
+            }
+
+            if(id_account){
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function(ev){
+                    if(xhr.readyState === 4){
+                        if(xhr.status === 200){
+                            var account = JSON.parse(xhr.responseText);
+                            document.querySelector('.account_prenom').innerHTML = account.last_name
+                            document.querySelector('.account_nom').innerHTML = account.middle_name
+                        }else{
+                            console.log('error')
+                        }
+                    }
+                }
+                xhr.open('GET','php/get_account.php?id_account='+id_account ,true );
+                xhr.setRequestHeader('X-Requested-With', 'xmlhttprequest');
+                xhr.send(null);
+            }
+
+            document.querySelector('#form-transfert').addEventListener('submit',function(e){
+                e.preventDefault()
+                console.log('e"');
+            })
+
+        })()
+         
+    </script>
 </body>
 </html>

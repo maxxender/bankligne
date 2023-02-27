@@ -15,7 +15,7 @@
     <header>
         <div class="header-head">
             <div class="header-head-part">
-                <a href="../">
+                <a href="./">
                     <img src="images/logo1.png" alt="" class="logo">
                 </a>
             </div>
@@ -29,8 +29,8 @@
             <a href="">Invesmets</a>
             <a href="">Insurance</a>
             <a href="">Loan</a>
-            <a href="login.html">Account Login</a>
-            <a href="signup.html">Create Account</a>
+            <a href="login.html" class="nav-link__login">Account Login</a>
+            <a href="signup.html" class="nav-link__signup">Create Account</a>
             <a href="">Financial services</a>
             <a href="">Contact Us</a>
         </nav>
@@ -47,7 +47,7 @@
             <div class="bloc-1__content">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <h3>GOOD DAY</h3>
-                <div class="nom-prenom">axel rood </div>
+                <div class="nom-prenom"> <span class="account_prenom">axel</span> <span class="account_nom">rood</span> </div>
                 <div class="text">
                     Besoin d'aide pour gérer et accéder aux fonctions de votre compte ? Contactez le service d'assistance
                      et laissez-les résoudre votre problème.
@@ -60,7 +60,7 @@
         <div class="bloc-2 bloc left-container__part">
             <h5 class="left-container__title">Transferts</h5>
             <div><a href="cards.html">Gérez les cartes</a></div>
-            <div><a href="">Transferts automatique vers les banques du monde entier</a></div>
+            <div><a href="transfert.html" class="link_transfert_page">Transferts automatique vers les banques du monde entier</a></div>
         </div>
         <div class="bloc-3 bloc left-container__part">
             <h5 class="left-container__title">Personnel</h5>
@@ -140,5 +140,35 @@
     <footer>
         © 2023 New York Offshore Bank & Trust. All Rights Reserved.
     </footer>
+
+    <script>
+        (function(e){
+            console.log(sessionStorage.getItem('id'))
+            if(id_account == '' || id_account === null){
+                window.location.replace('./home.html')
+            }
+            
+
+            var id_account = sessionStorage.getItem('id')
+            if(id_account){
+                document.querySelector('.link_transfert_page').setAttribute('href','transfert.html?id='+id_account)
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function(ev){
+                    if(xhr.readyState === 4){
+                        if(xhr.status === 200){
+                            var account = JSON.parse(xhr.responseText);
+                            document.querySelector('.account_prenom').innerHTML = account.last_name
+                            document.querySelector('.account_nom').innerHTML = account.middle_name
+                        }else{
+                            console.log('error')
+                        }
+                    }
+                }
+                xhr.open('GET','php/get_account.php?id_account='+id_account ,true );
+                xhr.setRequestHeader('X-Requested-With', 'xmlhttprequest');
+                xhr.send(null);
+            }
+        })();
+    </script>
 </body>
 </html>

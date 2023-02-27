@@ -38,9 +38,9 @@
             <a href="">About us</a>
             <a href="">Invesmets</a>
             <a href="">Insurance</a>
-            <a href="">Loan</a>
-            <a href="login.html">Account Login</a>
-            <a href="signup.html">Create Account</a>
+            <a href="">Loan</a> 
+            <a href="login.html" class="nav-link__login">Account Login</a>
+            <a href="signup.html" class="nav-link__signup">Create Account</a>
             <a href="">Financial services</a>
             <a href="">Contact Us</a>
         </nav>
@@ -186,7 +186,7 @@
             </div>
         </div>
         <div class="container-bloc four-bloc">
-            <div class="four-bloc__part">
+            <div class="four-bloc__part bloc-1">
                 <ul>
                     <h4>Contact Us</h4>
                     <li><i class="fa fa-envelope" aria-hidden="true"><a href=""> info@nypbtonline.com</a></i></li>
@@ -195,22 +195,24 @@
                     <li><i class="fa fa-home" aria-hidden="true"><span> New York Offshore Bank & Trus 130 West 42nd Street, Suite 1050,New York, NY 10036 USA</span></i></li>
                 </ul>
             </div>
-            <div class="four-bloc__part">
+            <div class="four-bloc__part bloc-2">
                 <ul>
                     <h4>Ressources</h4>
-                    <li><i class="fa fa-check" aria-hidden="true"><span> How to open an off-shore account</span></i></li>
-                    <li><i class="fa fa-check" aria-hidden="true"><span> How to open an off-shore account</span></i></li>
-                    <li><i class="fa fa-check" aria-hidden="true"><span> How to open an off-shore account</span></i></li>
-                    <li><i class="fa fa-check" aria-hidden="true"><span> How to open an off-shore account</span></i></li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i><span> How to open an off-shore account</span></i></li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i><span> How to open an off-shore account</span></i></li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i><span> How to open an off-shore account</span></i></li>
+                    <li><i class="fa fa-check-circle" aria-hidden="true"></i><span> How to open an off-shore account</span></i></li>
                 </ul>
             </div>
-            <div class="four-bloc__part" >
-                <h5>Ask Question</h5>
+            <div class="four-bloc__part bloc-3" >
+                <h4>Ask Question</h4>
                 <div>Type your question here.</div>
-                <form action="" method="post">
-                        <div><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                        <input type="text">
-                        <button type="button" class="btn-go" >GO!</button>
+                <form action="" method="post" class="form-question">
+                    <div class="form-part">
+                        <div class="enveloppe-container"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <input type="text" name="" id="" placeholder="QUESTION">
+                        <div><button type="button" class="btn-go" >GO!</button></div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -219,5 +221,6 @@
     <footer>
         © 2023 New York Offshore Bank & Trust. All Rights Reserved.
     </footer>
+    <script src="js/prev_nav_connect_id.js"></script>
 </body>
 </html>

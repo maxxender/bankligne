@@ -41,16 +41,17 @@
         <div class="page-login-container__content">
             <h2><span class="green-yellow">Account</span> login</h2>
             <h3>Connectez-vous et accedez à votre compte bancaire</h3>
-            <form action="" method="post">
+
+            <form action="php/login.php" method="post">
                 <div class="alert alert-login-form">USER ID ou mot de passe incorrect. Veuillez réessayez</div>
                 <div class="note">Note : Tous les champs sont obligatoires</div>
                 <div>
-                    <input type="text" placeholder="USER ID">
+                    <input type="text" placeholder="USER ID" id="user_id" name="user_id">
                 </div>
                 <div>
-                    <input type="text" name="" id="" placeholder="PASSWORD">
+                    <input type="password" name="pass" id="pass" placeholder="PASSWORD">
                 </div>
-                <button class="btn btn-login">CONNEXION AU COMPTE</button>
+                <button type="submit" class="btn btn-login">CONNEXION AU COMPTE</button>
             </form>
         </div>
     </div>
@@ -58,5 +59,47 @@
     <footer>
         © 2023 New York Offshore Bank & Trust. All Rights Reserved.
     </footer>
+
+    <script>
+        (function(){
+
+            console.log(sessionStorage.getItem('id'));
+
+            var form = document.querySelector('form');
+            var alert = document.querySelector('.alert-login-form')
+
+            form.addEventListener('submit',function(e){
+                e.preventDefault();
+                var formdata = new FormData(form);
+
+                console.log(formdata);
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function(){
+                    if(xhr.readyState === 4){
+                        if(xhr.status === 200){
+                            var success = JSON.parse(xhr.responseText);
+                            alert.innerHTML = success.message;
+                            alert.style.color = 'green';
+                            alert.style.fontSize = '1.5em'
+                            alert.style.fontStyle = 'italic'
+                            document.querySelectorAll('input').forEach(input=>{
+                                input.disabled = true
+                            })
+                            sessionStorage.setItem('id',success.id);
+                            window.location.replace('./account.html?id=' + success.id)
+                        }else{
+                            var errors = JSON.parse(xhr.responseText);
+                            console.log(errors)
+                        }
+                        console.log(xhr.responseText)
+                        console.log(JSON.parse(xhr.responseText))
+                    }
+                }
+                xhr.open(form.getAttribute('method'),form.getAttribute('action'), true);
+                xhr.setRequestHeader('X-Requested-With','xmlhttprequested');
+                xhr.send(formdata);
+            });
+        })();
+    </script>
 </body>
 </html>
